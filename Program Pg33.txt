@@ -1,20 +1,21 @@
 Mainprogram Pg33
 Var 
-    Int16_t Aa11, Bb22, Cc33, Cc44, Xx55;
+    Int16_t aa11, bb22, cc33, cc44, xx55;
 Start
-    Input Aa11;
-    Input Bb22;
+    Input aa11;
+    Input bb22;
 
-    For Cc33 :> Aa11 To Bb22 Do
-        (Cc33 Mul Cc33) :> Xx55;
+    For cc33 :> aa11 To bb22 Do
+        (cc33 Mul cc33) :> xx55;
         Output Xx55;
     EndFor
 
     0 :> Xx55;
-    For Cc33 :> 1 To Aa11 Do
-        For Cc44 :> 1 To Bb22 Do
-            (Xx55 + 1) :> Xx55;
+    For cc33 :> 1 To aa11 Do
+        For cc44 :> 1 To bb22 Do
+            (xx55 + 1) :> xx55;
         EndFor
     EndFor
-    Output Xx55;
+    Output xx55;
 End
+
