@@ -1,21 +1,21 @@
 Mainprogram Pg22
 Var 
-    Int16_t Aa11, Bb22, Cc33, Mm44;
+    Int16_t aa11, bb22, cc33, mm44;
 Start
-    Input Aa11;
-    Input Bb22;
-    Input Cc33;
+    Input aa11;
+    Input bb22;
+    Input cc33;
 
-    If (Aa11 >= Bb22) And (Aa11 >= Cc33) {
-        Aa11 :> Mm44;
-    } Else If (Bb22 >= Aa11) And (Bb22 >= Cc33) {
-        Bb22 :> Mm44;
+    If (aa11 >= bb22) And (aa11 >= cc33) {
+        aa11 :> mm44;
+    } Else If (bb22 >= aa11) And (bb22 >= cc33) {
+        bb22 :> mm44;
     } Else {
-        Cc33 :> Mm44;
+        cc33 :> mm44;
     }
-    Output Mm44;
+    Output mm44;
 
-    If (Aa11 Eq Bb22) And (Aa11 Eq Cc33) And (Bb22 Eq Cc33) {
+    If (aa11 Eq bb22) And (aa11 Eq cc33) And (bb22 Eq cc33) {
         Output 1;
     } Else {
         Output 0;
@@ -27,10 +27,11 @@ Start
         Output 0;
     }
 
-    If Aa11 >= (Bb22 + Cc33) {
+    If aa11 >= (bb22 + cc33) {
         Output 10;
     } Else {
         Output 0;
     }
 End
+
 
