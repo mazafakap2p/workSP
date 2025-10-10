@@ -1,19 +1,20 @@
 Mainprogram Pg11
 Var 
-    Int16_t Aa11, Bb22, Xx33, Yy44;
+    Int16_t aa11, bb22, xx33, yy44;
 Start
-    Input Aa11;
-    Input Bb22;
+    Input aa11;
+    Input bb22;
 
-    Output (Aa11 + Bb22);
-    Output (Aa11 - Bb22);
-    Output (Aa11 Mul Bb22);
-    Output (Aa11 Div Bb22);
-    Output (Aa11 Mod Bb22);
+    Output (aa11 + bb22);
+    Output (aa11 - bb22);
+    Output (aa11 Mul bb22);
+    Output (aa11 Div bb22);
+    Output (aa11 Mod bb22);
 
-    (Aa11 - Bb22) Mul 10 + (Aa11 + Bb22) Div 10 :> Xx33;
-    Xx33 + (Xx33 Mod 10) :> Yy44;
+    (aa11 - bb22) Mul 10 + (aa11 + bb22) Div 10 :> xx33;
+    xx33 + (xx33 Mod 10) :> yy44;
 
-    Output Xx33;
-    Output Yy44;
+    Output xx33;
+    Output yy44;
 End
+
