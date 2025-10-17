@@ -6,9 +6,9 @@ Start
     Input bb22;
     Input cc33;
 
-    If (aa11 >= bb22) And (aa11 >= cc33) {
+    If (aa11 > bb22) And (aa11 > cc33) {
         aa11 :> mm44;
-    } Else If (bb22 >= aa11) And (bb22 >= cc33) {
+    } Else If (bb22 > aa11) And (bb22 > cc33) {
         bb22 :> mm44;
     } Else {
         cc33 :> mm44;
@@ -21,17 +21,18 @@ Start
         Output 0;
     }
 
-    If Not (Aa11 >= 0) Or Not (Bb22 >= 0) Or Not (Cc33 >= 0) {
+    If Not (Aa11 < 0) Or Not (Bb22 < 0) Or Not (Cc33 < 0) {
         Output -1;
     } Else {
         Output 0;
     }
 
-    If aa11 >= (bb22 + cc33) {
+    If aa11 < (bb22 + cc33) {
         Output 10;
     } Else {
         Output 0;
     }
 End
+
 
 
